@@ -1,0 +1,22 @@
+#home-div > h2{
+  margin-top:60px;
+  margin-left: 500px;
+  box-shadow: 2px black;
+}
+
+#home-div > h5{
+  margin-top:30px;
+  margin-bottom: 30px;
+  margin-left: 600px;
+  background-color: #cccccc;
+  width : 210px;
+  height: 40px;
+  padding-left: 23px;
+  padding-top:12px;
+  font-weight: bold;
+}
+
+.home-form{
+    padding: 20px;
+    border: 2px solid black;
+}

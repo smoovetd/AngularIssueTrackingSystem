@@ -1,0 +1,33 @@
+<div id="home-div">
+	<h2>Wellcome to our Issue Tracking System!</h2>
+	<h5>Please Login or Register</h5>
+	<div class="margin-bottom-100"></div>
+		<div class="row">
+	        <div class="col-md-3 col-md-offset-2 border">
+	            <form name="loginUserForm" class="home-form" title="Login">
+	                <label for="userName">User Name: </label>
+	                <input required="required"  type="text" class="form-control" ng-model="loginUser.userName" id="userName">
+	                <br>
+	                <label for="password">Password: </label>
+	                <input required="required"  type="password" class="form-control" ng-model="loginUser.password" id="password">
+	                <br />
+	                <button class="btn btn-primary" ng-disabled="loginUserForm.$invalid" ng-click="login(loginUser)">Login</button>
+	            </form>
+	        </div>
+
+	        <div class="col-md-3 col-md-offset-2 border">
+	            <form name="registerUserForm" class="home-form" title="register">
+	                <label for="email">Email: </label>
+	                <input required="required" type="email" class="form-control" id="email" ng-model="registerUser.mail">
+	                <br />
+	                <label for="password">Password: </label>
+	                <input required="required" type="password" min-length="6" maxlength="100" class="form-control" ng-model="registerUser.password" id="register-User-password">
+	                <br />
+	                <label for="confirm-User-password">Confirm Password: </label>
+	                <input required="required" type="password" class="form-control" min-length="6" maxlength="100" ng-model="registerUser.confirmPassword" id="confirm-User-password">
+	                <br />
+	                <button class="btn btn-primary" ng-disabled="registerUserForm.$invalid || registerUser.password!== registerUser.confirmPassword" ng-click="register(registerUser)">Register</button>
+	            </form>
+	        </div>
+</div>
+</div>
