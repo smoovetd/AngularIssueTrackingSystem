@@ -6,10 +6,10 @@
 	        <div class="col-md-3 col-md-offset-2 border">
 	            <form name="loginUserForm" class="home-form" title="Login">
 	                <label for="userName">User Name: </label>
-	                <input required="required"  type="text" class="form-control" ng-model="loginUser.userName" id="userName">
+	                <input required="required"  type="text" class="form-control" ng-model="loginUser.Username" id="userName">
 	                <br>
 	                <label for="password">Password: </label>
-	                <input required="required"  type="password" class="form-control" ng-model="loginUser.password" id="password">
+	                <input required="required"  type="password" class="form-control" ng-model="loginUser.Password" id="password">
 	                <br />
 	                <button class="btn btn-primary" ng-disabled="loginUserForm.$invalid" ng-click="login(loginUser)">Login</button>
 	            </form>
@@ -18,13 +18,13 @@
 	        <div class="col-md-3 col-md-offset-2 border">
 	            <form name="registerUserForm" class="home-form" title="register">
 	                <label for="email">Email: </label>
-	                <input required="required" type="email" class="form-control" id="email" ng-model="registerUser.mail">
+	                <input required="required" type="email" class="form-control" id="email" ng-model="registerUser.Email">
 	                <br />
 	                <label for="password">Password: </label>
-	                <input required="required" type="password" min-length="6" maxlength="100" class="form-control" ng-model="registerUser.password" id="register-User-password">
+	                <input required="required" type="password" min-length="6" maxlength="100" class="form-control" ng-model="registerUser.Password" id="register-User-password">
 	                <br />
 	                <label for="confirm-User-password">Confirm Password: </label>
-	                <input required="required" type="password" class="form-control" min-length="6" maxlength="100" ng-model="registerUser.confirmPassword" id="confirm-User-password">
+	                <input required="required" type="password" class="form-control" min-length="6" maxlength="100" ng-model="registerUser.ConfirmPassword" id="confirm-User-password">
 	                <br />
 	                <button class="btn btn-primary" ng-disabled="registerUserForm.$invalid || registerUser.password!== registerUser.confirmPassword" ng-click="register(registerUser)">Register</button>
 	            </form>
